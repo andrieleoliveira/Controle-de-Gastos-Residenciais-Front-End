@@ -1,0 +1,143 @@
+.app {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  min-height: 100vh;
+  background: #0b0b0c;
+  color: #fff;
+}
+
+.sidebar {
+  border-right: 1px solid #222;
+  padding: 16px;
+  background: #0f0f12;
+}
+
+.sidebar h2 {
+  margin: 0 0 12px 0;
+  font-size: 18px;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.nav a {
+  padding: 10px 12px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #cfcfd6;
+  border: 1px solid transparent;
+}
+
+.nav a:hover {
+  border-color: #2b2b33;
+  background: #15151a;
+}
+
+.nav a.active {
+  background: #1a1a22;
+  border-color: #3a3a48;
+  color: #fff;
+}
+
+.content {
+  padding: 22px;
+}
+
+.card {
+  margin-top: 16px;
+  padding: 16px;
+  border: 1px solid #26262e;
+  border-radius: 14px;
+  background: #111116;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(180px, 1fr));
+  gap: 12px;
+  align-items: end;
+  margin-top: 8px;
+}
+
+label {
+  display: grid;
+  gap: 6px;
+  font-size: 14px;
+  color: #d7d7de;
+}
+
+input,
+select {
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #2a2a33;
+  background: #0e0e12;
+  color: #fff;
+  outline: none;
+}
+
+button {
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #2a2a33;
+  background: #1a1a22;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover:not(:disabled) {
+  background: #22222c;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+button.danger {
+  border-color: #5b1f1f;
+  background: #2a1111;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+}
+
+th,
+td {
+  border-bottom: 1px solid #23232b;
+  text-align: left;
+  padding: 10px;
+  font-size: 14px;
+}
+
+tfoot th {
+  border-top: 1px solid #2a2a33;
+}
+
+.muted {
+  color: #a7a7b3;
+  margin-top: 10px;
+  font-size: 13px;
+}
+
+.error {
+  color: #ff9a9a;
+  margin-top: 10px;
+}
+
+.warn {
+  color: #ffd28a;
+  margin-top: 10px;
+}
+
+.hint {
+  margin-top: 18px;
+  font-size: 12px;
+  color: #a7a7b3;
+}
